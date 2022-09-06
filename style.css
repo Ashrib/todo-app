@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #00B4DB;
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+background: linear-gradient(to right, #0083B0, #00B4DB); 
+}
+h1{
+    color: white;
+    text-align: center;
+}
+#main-container{
+    width: calc(100vw);
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+}
