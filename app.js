@@ -54,4 +54,3 @@ function submit() {
     document.getElementById("user-input").value = null;
 }
 
-
