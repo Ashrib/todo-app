@@ -44,15 +44,24 @@ function submit() {
         }
         var todo = new Task(arrayOfData.length, getValue, false);
         arrayOfData.push(todo);
-        console.log(arrayOfData);
+        // console.log(arrayOfData);
         
-        var taskDiv = document.createElement("div");
         for(var i=0; i<arrayOfData.length; i++) {
-            taskDiv.setAttribute("id", i)
-            for(var key in arrayOfData[i]){
-                console.log(arrayOfData[i][key]);
+            for(var key in arrayOfData[i].userInput){
+                var taskDiv = document.createElement("div");
+                taskDiv.setAttribute("id", i);
+                var todoText = document.createElement("span");
+                todoText.setAttribute("class", "todo-text");
+                taskDiv.appendChild(todoText);
+
+                // var tick_btn = document.createElement("button");
+                // tick_btn.appendChild(document.createTextNode("<"))
+                // taskDiv.appendChild(tick_btn);
+
+
+                //console.log(arrayOfData[i].userInput[key]);
                 
-                taskDiv.appendChild(document.createTextNode(arrayOfData[i][key]))
+                todoText.appendChild(document.createTextNode(arrayOfData[i].userInput))
             }
             
         }
