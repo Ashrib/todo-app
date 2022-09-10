@@ -51,7 +51,7 @@ function add() {
                 var taskDiv = document.createElement("div");
                 taskDiv.setAttribute("id", i);
                 taskDiv.setAttribute("class", "todo");
-                //compl ============================
+                //compl ===========================
                 // var compDiv = document.createElement("div");
                 // compDiv.setAttribute("id" , "comp-div");
                 // var compText = document.createElement("div");
