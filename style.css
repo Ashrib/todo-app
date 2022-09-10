@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
 body{
     margin: 0%;
     padding: 0%;
@@ -8,6 +9,9 @@ body{
 h1{
     color: white;
     text-align: center;
+    font-family:  'Combo', cursive;
+    font-size: 2.6em;
+    text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.76);
 }
 #main-container{
     width: calc(100vw);
@@ -37,3 +41,90 @@ h1{
 #add-btn:hover{
     background-color: red;
 }
+#all-todoBox{
+    margin-top: 20px;
+    max-height: 300px;
+    /* max-width: 250px; */
+    overflow-y: scroll;
+    /* border: 2px solid gray; */
+    /* padding: 2px; */
+}
+#all-todoBox::-webkit-scrollbar{
+    width: 5px;
+}
+#all-todoBox::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+}
+#all-todoBox::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 255, 255);
+}
+#all-todoBox::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin: 5px;
+    font-size: 1.2em;
+}
+.todo-text{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.all-btns{
+    display: flex;
+}
+
+#delete-btn, #edit-btn, #done-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 1px;
+}
+#delete-btn:hover{
+    background-color: red;
+    color: white;
+}
+#done-btn:hover{
+    color: white;
+    background-color: rgb(0, 220, 0);
+}
+#edit-btn:hover{
+    color: white;
+    background-color: grey;
+}
+#update-btn{
+    color: white;
+    height: 100%;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: grey;
+}
+#update-btn:hover{
+    background-color: rgba(21, 255, 0, 0.622);
+}
+/* #comp-div{
+    display: none;
+    position: absolute;
+    width: inherit;
+    height: 4.5%;
+    background-color: rgb(0, 0, 0);
+    opacity: 70%;
+    color: white;
+}
+#comp-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#comp-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+} */
